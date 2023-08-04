@@ -1,126 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
   <title>Frontend Mentor | Multi-step form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main>
+    <div class="container">
+      <!-- Sidebar start -->
 
-  <!-- Sidebar start -->
+      <div>
+        <div>
+          <div class="circle">1</div>
+          <div>
+            <p class="step">STEP 1</p>
+            <p class="step-info">YOUR INFO</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">2</div>
+          <div>
+            <p class="step">STEP 2</p>
+            <p class="step-info">SELECT PLAN</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">3</div>
+          <div>
+            <p class="step">STEP 3</p>
+            <p class="step-info">ADD-ONS</p>
+          </div>
+        </div>
+        <div>
+          <div class="circle">4</div>
+          <div>
+            <p class="step">STEP 4</p>
+            <p class="step-info">SUMMARY</p>
+          </div>
+        </div>
+      </div>
 
-  Step 1
-  Your info
+      <!-- Sidebar end -->
 
-  Step 2
-  Select plan
+      <div>
+        <form action="">
+          <!-- Step 1 start -->
 
-  Step 3
-  Add-ons
+          <div class="tab">
+            <div class="tab-header">
+              <h1 class="heading">Personal info</h1>
+              <h3 class="sub-heading">
+                Please provide your name, email address, and phone number.
+              </h3>
+            </div>
+            <div>
+              <p class="label-error">
+                <span><label for="name"></label></span><span class="error"></span>
+              </p>
+              <p>
+                <input type="text" name="name" id="name" placeholder="e.g. Stephen King" />
+              </p>
+            </div>
+            <div>
+              <p class="label-error">
+                <span><label for="email"></label></span><span class="error"></span>
+              </p>
+              <p>
+                <input type="email" name="email" id="name" placeholder="e.g. stephenking@lorem.com" />
+              </p>
+            </div>
+            <div>
+              <p class="label-error">
+                <span><label for="phone"></label></span>
+                <span class="error"></span>
+              </p>
+              <p>
+                <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890" />
+              </p>
+            </div>
+          </div>
 
-  Step 4
-  Summary
+          <!-- Step 1 end -->
 
-  <!-- Sidebar end -->
+          <!-- Step 2 start -->
 
-  <!-- Step 1 start -->
+          <div class="tab">
+            <div class="tab-header">
+              <h1 class="heading">Select your plan</h1>
+              <h3 class="sub-heading">
+                You have the option of monthly or yearly
+                billing.
+              </h3>
+            </div>
+            <div class="Subs-container">
+              <div class="subs-card">
+                <img src="assets/images/icon-arcade.svg" alt="icon" class="card-icon" />
+                <p class="subs-type">Arcade</p>
+                <p class="subs-ammount">$9/mo</p>
+                <p class="free">2 months free</p>
+              </div>
+              <div class="subs-card">
+                <img src="assets/images/icon-advanced.svg" alt="icon" class="card-icon" />
+                <p class="subs-type">Advanced</p>
+                <p class="subs-ammount">$12/mo</p>
+                <p class="free">2 months free</p>
+              </div>
+              <div class="subs-card">
+                <img src="assets/images/icon-pro.svg" alt="icon" class="card-icon" />
+                <p class="subs-type">Pro</p>
+                <p class="subs-ammount">$15/mo</p>
+                <p class="free">2 months free</p>
+              </div>
+              <div class="double-switch">
+                <p>
+                  <span id="monthly">Monthly</span><span id="d-switch"><input type="checkbox"
+                      name="d-switch" /></span><span id="yearly">Yearly</span>
+                </p>
+              </div>
+            </div>
+          </div>
 
-  Personal info
-  Please provide your name, email address, and phone number.
+          <!-- Step 2 end -->
 
-  Name
-  e.g. Stephen King
+          <!-- Step 3 start -->
 
-  Email Address
-  e.g. stephenking@lorem.com
+          <div class="tab">
+            <div class="tab-header">
+              <h1 class="heading">Pick add-ons</h1>
+              <h3 class="sub-heading">
+                Add-ons help enhance your gaming experience.
+              </h3>
+            </div>
 
-  Phone Number
-  e.g. +1 234 567 890
+            <div class="adons">
+              <p><input type="checkbox" name="online-service"></p>
+              <p>Online service</p>
+              <p>Access to multiplayer games</p>
+              <p>+$1/mo</p>
+            </div>
+            <div class="adons">
+              <p><input type="checkbox" name="online-service"></p>
+              <p>Larger storage</p>
+              <p>Extra 1TB of cloud save</p>
+              <p>+$2/mo</p>
+            </div>
+            <div class="adons">
+              <p><input type="checkbox" name="online-service"></p>
+              <p>Customizable Profile</p>
+              <p>Custom theme on your profile</p>
+              <p>+$2/mo</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 end -->
 
-  Next Step
+          <!-- Step 4 start -->
 
-  <!-- Step 1 end -->
+          <div class="tab">
+            <div class="tab-header">
+              <h1 class="heading">Finishing up</h1>
+              <h3 class="sub-heading">
+                Double-check everything looks OK before confirming.
+              </h3>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
 
-  <!-- Step 2 start -->
-
-  Select your plan
-  You have the option of monthly or yearly billing.
-
-  Arcade
-  $9/mo
-
-  Advanced
-  $12/mo
-
-  Pro
-  $15/mo
-
-  Monthly
-  Yearly
-
-  Go Back
-  Next Step
-
-  <!-- Step 2 end -->
-
-  <!-- Step 3 start -->
-
-  Pick add-ons
-  Add-ons help enhance your gaming experience.
-
-  Online service
-  Access to multiplayer games
-  +$1/mo
-
-  Larger storage
-  Extra 1TB of cloud save
-  +$2/mo
-
-  Customizable Profile
-  Custom theme on your profile
-  +$2/mo
-
-  Go Back
-  Next Step
-
-  <!-- Step 3 end -->
-
-  <!-- Step 4 start -->
-
-  Finishing up
-  Double-check everything looks OK before confirming.
+   
 
   <!-- Dynamically add subscription and add-on selections here -->
 
-  Total (per month/year)
-
-  Go Back
-  Confirm
+  Total (per month/year) Go Back Confirm
 
   <!-- Step 4 end -->
 
   <!-- Step 5 start -->
 
-  Thank you!
-
-  Thanks for confirming your subscription! We hope you have fun 
-  using our platform. If you ever need support, please feel free 
-  to email us at support@loremgaming.com.
+  Thank you! Thanks for confirming your subscription! We hope you have fun
+  using our platform. If you ever need support, please feel free to email
+  us at support@loremgaming.com.
 
   <!-- Step 5 end -->
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your
+      Name Here</a>.
   </div>
 </body>
+
 </html>

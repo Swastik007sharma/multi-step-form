@@ -10,7 +10,8 @@
 
   <title>Frontend Mentor | Multi-step form</title>
 
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link id="step_css" rel="stylesheet" href="css/step1.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -66,159 +67,157 @@
 
       <!-- Sidebar end -->
 
-      <div>
-        <form action="">
-          <!-- Step 1 start -->
+      <form action="">
+        <!-- Step 1 start -->
 
-          <div class="tab">
-            <div class="tab-header">
-              <h1 class="heading">Personal info</h1>
-              <p class="sub-heading">
-                Please provide your name, email address, and phone number.
-              </p>
+        <div class="tab">
+          <div class="tab-header">
+            <h1 class="heading">Personal info</h1>
+            <p class="sub-heading">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <div>
+            <p class="label-error">
+              <span><label for="name">Name</label></span><span class="error"></span>
+            </p>
+            <p>
+              <input type="text" name="name" id="name" placeholder="e.g. Stephen King" />
+            </p>
+          </div>
+          <div>
+            <p class="label-error">
+              <span><label for="email">Email Address</label></span><span class="error"></span>
+            </p>
+            <p>
+              <input type="email" name="email" id="name" placeholder="e.g. stephenking@lorem.com" />
+            </p>
+          </div>
+          <div>
+            <p class="label-error">
+              <span><label for="phone">Phone Number</label></span>
+              <span class="error"></span>
+            </p>
+            <p>
+              <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890" />
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 1 end -->
+
+        <!-- Step 2 start -->
+
+        <div class="tab">
+          <div class="tab-header">
+            <h1 class="heading">Select your plan</h1>
+            <p class="sub-heading">
+              You have the option of monthly or yearly
+              billing.
+            </p>
+          </div>
+          <div class="Subs-container">
+            <div class="subs-card">
+              <img src="assets/images/icon-arcade.svg" alt="icon" class="card-icon" />
+              <p class="subs-type">Arcade</p>
+              <p class="subs-ammount">$9/mo</p>
+              <p class="free">2 months free</p>
             </div>
-            <div>
-              <p class="label-error">
-                <span><label for="name"></label></span><span class="error"></span>
-              </p>
+            <div class="subs-card">
+              <img src="assets/images/icon-advanced.svg" alt="icon" class="card-icon" />
+              <p class="subs-type">Advanced</p>
+              <p class="subs-ammount">$12/mo</p>
+              <p class="free">2 months free</p>
+            </div>
+            <div class="subs-card">
+              <img src="assets/images/icon-pro.svg" alt="icon" class="card-icon" />
+              <p class="subs-type">Pro</p>
+              <p class="subs-ammount">$15/mo</p>
+              <p class="free">2 months free</p>
+            </div>
+            <div class="double-switch">
               <p>
-                <input type="text" name="name" id="name" placeholder="e.g. Stephen King" />
-              </p>
-            </div>
-            <div>
-              <p class="label-error">
-                <span><label for="email"></label></span><span class="error"></span>
-              </p>
-              <p>
-                <input type="email" name="email" id="name" placeholder="e.g. stephenking@lorem.com" />
-              </p>
-            </div>
-            <div>
-              <p class="label-error">
-                <span><label for="phone"></label></span>
-                <span class="error"></span>
-              </p>
-              <p>
-                <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890" />
+                <span id="monthly">Monthly</span><span id="d-switch"><input type="checkbox"
+                    name="d-switch" /></span><span id="yearly">Yearly</span>
               </p>
             </div>
           </div>
+        </div>
 
-          <!-- Step 1 end -->
+        <!-- Step 2 end -->
 
-          <!-- Step 2 start -->
+        <!-- Step 3 start -->
 
-          <div class="tab">
-            <div class="tab-header">
-              <h1 class="heading">Select your plan</h1>
-              <p class="sub-heading">
-                You have the option of monthly or yearly
-                billing.
-              </p>
-            </div>
-            <div class="Subs-container">
-              <div class="subs-card">
-                <img src="assets/images/icon-arcade.svg" alt="icon" class="card-icon" />
-                <p class="subs-type">Arcade</p>
-                <p class="subs-ammount">$9/mo</p>
-                <p class="free">2 months free</p>
-              </div>
-              <div class="subs-card">
-                <img src="assets/images/icon-advanced.svg" alt="icon" class="card-icon" />
-                <p class="subs-type">Advanced</p>
-                <p class="subs-ammount">$12/mo</p>
-                <p class="free">2 months free</p>
-              </div>
-              <div class="subs-card">
-                <img src="assets/images/icon-pro.svg" alt="icon" class="card-icon" />
-                <p class="subs-type">Pro</p>
-                <p class="subs-ammount">$15/mo</p>
-                <p class="free">2 months free</p>
-              </div>
-              <div class="double-switch">
-                <p>
-                  <span id="monthly">Monthly</span><span id="d-switch"><input type="checkbox"
-                      name="d-switch" /></span><span id="yearly">Yearly</span>
-                </p>
-              </div>
-            </div>
+        <div class="tab">
+          <div class="tab-header">
+            <h1 class="heading">Pick add-ons</h1>
+            <p class="sub-heading">
+              Add-ons help enhance your gaming experience.
+            </p>
           </div>
 
-          <!-- Step 2 end -->
-
-          <!-- Step 3 start -->
-
-          <div class="tab">
-            <div class="tab-header">
-              <h1 class="heading">Pick add-ons</h1>
-              <p class="sub-heading">
-                Add-ons help enhance your gaming experience.
-              </p>
-            </div>
-
-            <div class="adons">
-              <p><input type="checkbox" name="online-service"></p>
-              <p>Online service</p>
-              <p>Access to multiplayer games</p>
-              <p>+$1/mo</p>
-            </div>
-            <div class="adons">
-              <p><input type="checkbox" name="online-service"></p>
-              <p>Larger storage</p>
-              <p>Extra 1TB of cloud save</p>
-              <p>+$2/mo</p>
-            </div>
-            <div class="adons">
-              <p><input type="checkbox" name="online-service"></p>
-              <p>Customizable Profile</p>
-              <p>Custom theme on your profile</p>
-              <p>+$2/mo</p>
-            </div>
+          <div class="adons">
+            <p><input type="checkbox" name="online-service"></p>
+            <p>Online service</p>
+            <p>Access to multiplayer games</p>
+            <p>+$1/mo</p>
           </div>
-
-          <!-- Step 3 end -->
-
-          <!-- Step 4 start -->
-
-          <div class="tab">
-            <div class="tab-header">
-              <h1 class="heading">Finishing up</h1>
-              <p class="sub-heading">
-                Double-check everything looks OK before confirming.
-              </p>
-            </div>
-            <div>
-              <!-- Dynamically add subscription and add-on selections here -->
-
-              Total (per month/year)
-            </div>
-            <!-- Step 4 end -->
-
-            <!-- Step 5 start -->
+          <div class="adons">
+            <p><input type="checkbox" name="online-service"></p>
+            <p>Larger storage</p>
+            <p>Extra 1TB of cloud save</p>
+            <p>+$2/mo</p>
           </div>
-          <div class="tab">
-            <div class="thankyou">
-              <img src="assets/images/icon-thank-you.svg" alt="icon">
-              <h1 class="heading">Thank you!</h1>
-              <p class="sub-heading">
-                Thanks for confirming your subscription! We hope you have fun
-                using our platform. If you ever need support, please feel free to email
-                us at support@loremgaming.com.
-              </p>
-            </div>
+          <div class="adons">
+            <p><input type="checkbox" name="online-service"></p>
+            <p>Customizable Profile</p>
+            <p>Custom theme on your profile</p>
+            <p>+$2/mo</p>
           </div>
+        </div>
 
-          <!-- Step 5 end -->
+        <!-- Step 3 end -->
 
-          <div class="button-container">
-            <button id="back">Go Back</button>
-            <span>
-              <button id="next">Next Step</button>
-              <button class="confirm">Confirm</button>
-            </span>
+        <!-- Step 4 start -->
+
+        <div class="tab">
+          <div class="tab-header">
+            <h1 class="heading">Finishing up</h1>
+            <p class="sub-heading">
+              Double-check everything looks OK before confirming.
+            </p>
           </div>
-        </form>
-      </div>
+          <div>
+            <!-- Dynamically add subscription and add-on selections here -->
+
+            Total (per month/year)
+          </div>
+          <!-- Step 4 end -->
+
+          <!-- Step 5 start -->
+        </div>
+        <div class="tab">
+          <div class="thankyou">
+            <img src="assets/images/icon-thank-you.svg" alt="icon">
+            <h1 class="heading">Thank you!</h1>
+            <p class="sub-heading">
+              Thanks for confirming your subscription! We hope you have fun
+              using our platform. If you ever need support, please feel free to email
+              us at support@loremgaming.com.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 5 end -->
+
+        <div class="button-container">
+          <button id="back">Go Back</button>
+          <span>
+            <button id="next">Next Step</button>
+            <button id="confirm">Confirm</button>
+          </span>
+        </div>
+      </form>
     </div>
   </main>
 

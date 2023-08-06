@@ -28,6 +28,31 @@ html, body {
     font-size: 16px;
 }
 
+form{
+    padding: 0 9.79%;
+}
+
+label{
+    color: var(--Marine_blue);
+    font-weight: 500;
+}
+
+input{
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    /* color: var(--Marine_blue); */
+    color: var(--Marine_blue);
+    border: 1px solid var(--Cool_gray);
+    outline-color: var(--Marine_blue);
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: var(--Cool_gray);
+}
+
 .container{
     background-color: var(--White);
     width: 65%;
@@ -40,14 +65,13 @@ html, body {
     left: 0;
     right: 0;
     transform: translateY(-50%);
-
 }
 
 .sidebar{
     width: 30%;
     height: 75vh;
     padding-top: 5px;
-    background-image: url("assets/images/bg-sidebar-desktop.svg");
+    background-image: url("../assets/images/bg-sidebar-desktop.svg");
     background-size:contain;
     background-repeat:no-repeat;
 }
@@ -88,8 +112,28 @@ html, body {
     display: none;
 }
 
-.active{
-    display:block
+.label-error{
+    font-size: 0.85rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.heading{
+    color: var(--Marine_blue);
+    margin-top: 3rem;
+}
+
+.sub-heading{
+    color:var(--Cool_gray);
+    margin-top: .5rem;
+    margin-bottom: 2.5rem;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 16%;
 }
 
 #back{
@@ -106,7 +150,19 @@ html, body {
     font-weight: 500;
     font-size: 0.85rem;
     background-color:var(--Marine_blue);
-    border-radius: 5px;
-    height: 2.5rem;
-    width: 6rem;
+    border-radius: 8px;
+    height: 2.7rem;
+    width: 6.5rem;
 }
+
+#confirm{
+    color: var(--White);
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color:var(--Purplish_blue);
+    border-radius: 8px;
+    height: 2.7rem;
+    width: 6.5rem;
+}
+

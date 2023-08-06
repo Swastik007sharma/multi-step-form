@@ -1,0 +1,11 @@
+.tab:nth-of-type(1) {
+    display: block;
+}
+
+.button-container{
+    justify-content: flex-end;
+}
+
+#back{display: none;}
+
+#confirm{display: none;}

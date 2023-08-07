@@ -1,0 +1,108 @@
+.tab:nth-of-type(2) {
+    display: block;
+}
+
+.subs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subs-card {
+    border: 1px solid var(--Cool_gray);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 30.5%;
+}
+
+.subs-card:hover {
+    border-color: var(--Purplish_blue);
+    background-color: var(--Light_blue);
+}
+
+.card-icon {
+    margin-bottom: 2.5rem;
+}
+
+.subs-type {
+    color: var(--Marine_blue);
+    font-weight: 500;
+    margin: 2px 0;
+}
+
+.subs-ammount {
+    color: var(--Cool_gray);
+    font-size: 0.9rem;
+    margin: 2px 0;
+}
+
+.free {
+    color: var(--Marine_blue);
+    font-size: .75rem;
+    margin: 2px 0;
+}
+
+.double-switch {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light_blue);
+    margin: 2.5rem auto;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+.switch-container>input{
+    display: none;
+}
+.switch-container>label{
+    position: relative;
+    margin: 0 1.2rem;
+    display: block;
+    background-color: var(--Marine_blue);
+    width: 2.4rem;
+    height: 1.3rem;
+    border-radius: 10px;
+}
+
+.switch-container>label:before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:3px;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--White);
+    border-radius: 50%;
+    transition: left 300ms linear;
+}
+
+.switch-container input:checked + label::before{
+    left:50%;
+}
+
+.switch-container input:checked ~ span:last-of-type{
+    color: var(--Marine_blue);
+}
+.switch-container input:not(:checked) ~ span:first-of-type{
+    color: var(--Marine_blue);
+}
+
+#monthly,
+#yearly {
+    color: var(--Cool_gray);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.button-container {
+    top: 8%;
+}
+
+#confirm {
+    display: none;
+}

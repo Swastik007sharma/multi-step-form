@@ -1,9 +1,21 @@
+.container{
+    background-color: var(--White);
+    width: 65%;
+    padding: 1.1%;
+}
+
 .tab:nth-of-type(1) {
     display: block;
 }
 
 .button-container{
     justify-content: flex-end;
+}
+
+.circle:first-of-type{
+    color: var(--Marine_blue);
+    border: none;
+    background-color: var(--Pastel_blue);
 }
 
 #back{display: none;}

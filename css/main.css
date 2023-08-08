@@ -121,7 +121,7 @@ input::placeholder{
 
 .heading{
     color: var(--Marine_blue);
-    margin-top: 3rem;
+    margin-top: 2.2rem;
 }
 
 .sub-heading{
@@ -134,26 +134,28 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 16%;
+    top: 18%;
 }
 
 #back{
     color:var(--Cool_gray);
     border: none;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 1rem;
     background-color: var(--White);
+    cursor: pointer;
 }
 
 #next{
     color: var(--White);
     border: none;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     background-color:var(--Marine_blue);
     border-radius: 8px;
-    height: 2.7rem;
-    width: 6.5rem;
+    height: 2.8rem;
+    width: 7.1rem;
+    cursor: pointer;
 }
 
 #confirm{
@@ -163,7 +165,8 @@ input::placeholder{
     font-size: 1rem;
     background-color:var(--Purplish_blue);
     border-radius: 8px;
-    height: 2.7rem;
-    width: 6.5rem;
+    height: 2.8rem;
+    width: 7.1rem;
+    cursor: pointer;
 }
 

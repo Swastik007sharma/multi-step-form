@@ -15,6 +15,7 @@
     border-radius: 10px;
     padding: 1rem;
     width: 30.5%;
+    cursor: pointer;
 }
 
 .subs-card:hover {
@@ -66,6 +67,7 @@
     width: 2.4rem;
     height: 1.3rem;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .switch-container>label:before{
@@ -100,7 +102,7 @@
 }
 
 .button-container {
-    top: 8%;
+    top: 9.5%;
 }
 
 #confirm {

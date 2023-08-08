@@ -20,7 +20,6 @@
 
 .subs-card:hover {
     border-color: var(--Purplish_blue);
-    background-color: var(--Light_blue);
 }
 
 .card-icon {

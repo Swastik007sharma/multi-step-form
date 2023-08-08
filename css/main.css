@@ -146,6 +146,10 @@ input::placeholder{
     cursor: pointer;
 }
 
+#back:hover{
+    background-color: var(--Marine_blue);
+}
+
 #next{
     color: var(--White);
     border: none;
@@ -158,6 +162,10 @@ input::placeholder{
     cursor: pointer;
 }
 
+#next:hover{
+    opacity: 0.9;
+}
+
 #confirm{
     color: var(--White);
     border: none;
@@ -168,5 +176,9 @@ input::placeholder{
     height: 2.8rem;
     width: 7.1rem;
     cursor: pointer;
+}
+
+#confirm:hover{
+    opacity: 0.8;
 }
 

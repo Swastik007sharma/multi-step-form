@@ -12,12 +12,6 @@
     justify-content: flex-end;
 }
 
-.circle:first-of-type{
-    color: var(--Marine_blue);
-    border: none;
-    background-color: var(--Pastel_blue);
-}
-
 #back{display: none;}
 
 #confirm{display: none;}

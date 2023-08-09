@@ -96,6 +96,12 @@ input::placeholder{
     margin: 30px  15px 0 30px;
 }
 
+.active-step{
+    color: var(--Marine_blue);
+    border: none;
+    background-color: var(--Pastel_blue);
+}
+
 .step {
     color: var(--Cool_gray);
     padding-bottom: 3px;
@@ -147,7 +153,7 @@ input::placeholder{
 }
 
 #back:hover{
-    background-color: var(--Marine_blue);
+    color: var(--Marine_blue);
 }
 
 #next{

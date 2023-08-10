@@ -116,6 +116,7 @@ input::placeholder{
 }
 
 .tab{
+    position: absolute;
     display: none;
 }
 
@@ -143,7 +144,7 @@ input::placeholder{
     top: 18%;
 }
 
-#back{
+.back{
     color:var(--Cool_gray);
     border: none;
     font-weight: 500;
@@ -152,11 +153,11 @@ input::placeholder{
     cursor: pointer;
 }
 
-#back:hover{
+.back:hover{
     color: var(--Marine_blue);
 }
 
-#next{
+.next{
     color: var(--White);
     border: none;
     font-weight: 500;
@@ -168,7 +169,7 @@ input::placeholder{
     cursor: pointer;
 }
 
-#next:hover{
+.next:hover{
     opacity: 0.9;
 }
 

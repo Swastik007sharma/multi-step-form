@@ -3,7 +3,7 @@ var sidebarActiveStep = 1;
 
 const cssLink = document.getElementById("step_css");
 
-const nextButton = document.getElementById("next");
+const nextButton = document.querySelectorAll(".next");
 const backButton = document.getElementById("back");
 const confirmButton = document.getElementById("confirm");
 
@@ -41,5 +41,10 @@ function forwardStep(event) {
 	cssLink.href = stepCssObj[++currentStep];
 	activeStep(currentStep);
 }
+function addevent(elm){
+	elm.addEventListener("click", forwardStep)
+	console.log(elm)
+}
+nextButton.forEach(addevent)
 
-nextButton.addEventListener("click", forwardStep);
+// Step 1 script
